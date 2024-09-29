@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        section{
+            min-height: 100vh;
+            background-color: #1e9f31;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 4%;
+        }
+        .card{
+            width: 350px;
+            background-color: #fff;
+            padding: 30px;
+            line-height:1.5;
+        }
+        .card .main-btn{
+            width: 100%;
+            margin-top: 20px;
+            border: none;
+            padding: 10px;
+            font-size: 1.1rem;
+            background-color: #1e9f31;
+            font-weight:600;
+            border-radius: 5px;
+            box-shadow: 0px 3px 10px #1e9f31;
+        }
+        .card .main-btn:active{
+            transform: scale(0.9);
+        }
+        .card h1{
+            color:#1e9f31;
+            margin-bottom: 20px;
+        }
+        .card p{
+            color:rgb(54,54,54);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>css selectors</h1>
+        <p>we have some css selectors to style the html elements</p>
+    
+    <ul>
+        <li>universal selectors(*)</li>
+        <li>element selectors (tag name)</li>
+        <li>class name selectors (class name using .)</li>
+        <li>Id selectors (using id attributes #)</li>
+        <li>attribute selectors (using any attributes inside the elements)</li>
+        <li>attribute with value selectors (attribute with values)</li>
+    </ul>
+</center>
+
+<h1>class name selectors (class name using .)</h1>
+<section>
+    <div class="card">
+        <h1>heading1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus accusantium alias assumenda ipsa quis exercitationem explicabo, vel nulla magnam, quos veniam dolorum reprehenderit saepe ipsum, neque eligendi minima placeat hic.</p>
+        <button class="main-btn">Know More</button>
+    </div>
+    <div class="card">
+        <h1>heading2</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ab dolore, aut consectetur illo impedit ducimus architecto obcaecati, ratione qui, enim natus non labore laboriosam ipsam sunt quasi id? Nesciunt?</p>
+            <button class="main-btn">Know More</button>
+    </div>
+    <div class="card">
+        <h1>heading3</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit magni dolorem nulla laborum atque blanditiis sint, consequuntur laboriosam itaque veritatis amet ab ex aliquid sed, architecto eaque aut dicta officia.</p>
+            <button class="main-btn">Know More</button>
+    </div>
+    <div class="card">
+        <h1>heading4</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, similique consectetur repellendus error, quae eos quia iure iusto ipsam aliquid ipsa sint deleniti exercitationem culpa accusantium! Consequatur minus veritatis sint?</p>
+            <button class="main-btn">Know More</button>
+    </div>
+    <div class="card">
+        <h1>heading5</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem molestiae quasi eum fugit recusandae, enim omnis labore sapiente ea distinctio dicta earum suscipit, velit inventore praesentium, beatae quos quod provident!</p>
+            <button class="main-btn">Know More</button>
+       
+    </div>
+</section>
+</body>
+</html>
+
