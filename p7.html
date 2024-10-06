@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+        #container{
+            min-height: 100vh;
+            background-color: aquamarine;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #card{
+            width: 350px;
+            background-color: #fff;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-shadow: 15px 15px 5px #0c0c0c;
+            border:3px solid #0c0c0c;
+
+        }
+        #subtitle{
+            line-height: 1.5;
+        }
+        #main-btn{
+            border: none;
+            width: 100%;
+            background-color:aquamarine;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: 700;
+            box-shadow: 2px 2px 0px #0c0c0c;
+
+        }
+        #main-btn:active{
+            box-shadow: none;
+            transform: translateX(2px) translateY(2px);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>css selectors</h1>
+        <p>we have some css selectors to style the html elements</p>
+    
+    <ul>
+        <li>universal selectors(*)</li>
+        <li>element selectors (tag name)</li>
+        <li>class name selectors (class name using .)</li>
+        <li>Id selectors (using id attributes #)</li>
+        <li>attribute selectors (using any attributes inside the elements)</li>
+        <li>attribute with value selectors (attribute with values)</li>
+    </ul>
+</center>
+
+<h1>Id selectors (using id attributes #)</h1>
+
+<section id="container">
+    <div id="card">
+        <h1 id="heading">this is the heading</h1>
+        <p id="subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus nihil consequuntur ratione ullam officia tempore ducimus deserunt asperiores facere, laborum optio esse. Vel dolorum cumque est perspiciatis at impedit nam!</p>
+        <button id="main-btn">create account</button>
+    </div>
+</section>
+
+</body>
+</html>

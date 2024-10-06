@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID,Attribute,and attribute with value Selector Example</title>
+    <style>
+       #main-card{
+        min-height: 100vh;
+           /* background-color: aquamarine; */
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       #card{
+        width: 75%;
+        height: 600px;
+        background-color: #fff; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+       }
+       #color{
+        width: 400px;
+        height: 600px;
+        background-color: #f293bd;
+       }
+       [src]{
+        width: 430px;
+        height: 500px;
+        margin: 50px 70px;
+       }
+       #right{
+        /* background-color: blue; */
+        width: 900px;
+        height: 400px;
+        margin: 0px 90px;
+        text-align: center;
+       }
+       #head{
+          font-size: 20px;
+          font-weight: lighter;
+       }
+       h1[title="rose desserts"]{
+        font-size: 70px;
+        color: #f293bd;
+        font-weight: 200;
+        margin-top: 20px;
+        margin: 0px;
+       }
+       p{
+        line-height: 1.9rem;
+        font-size: 20px;
+        margin-top: 30px;
+        padding: 10px;
+        font-weight: 100;
+       }
+       #main-btn{
+        border: none;
+        padding:12px 30px;
+        margin-top: 20px;
+        background-color: #f293bd;
+        color: #fff;
+        font-size: 17px;
+        letter-spacing: 1px;
+       }
+       #main-btn:hover{
+        background-color: rgb(160, 159, 159);
+       }
+       /* #image{
+        width:50%;
+        height: 100%;
+        background-color: chocolate;
+        filter:blur(50%);
+       }
+       img[alt="wait..."]{
+             width: 50%;
+             height: 500px;
+       }
+       img{
+            background-color: chocolate;
+            
+       } */
+    </style>
+</head>
+<body>
+    <section id="main-card">
+        <div id="card">
+            <div id="color">
+                <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/7a35929612ef558398d48703/pexels-photo-8603032.jpeg" alt="loading...">
+               
+            </div>
+            
+            <div id="right">
+                <h3 id="head">OUR PRIDE</h3>
+                <h1 title="rose desserts">desserts</h1>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation <br>ullamco laboris nisi ut aliquip ex ea commod. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <button id="main-btn">Read More</button>
+            </div>
+        </div> 
+    </section>
+
+<!-- 
+    <div id="image">
+        <img src="https://img.freepik.com/premium-photo/mountain-range-with-sunset-horizon_1340-48841.jpg" alt="wait...">
+
+      </div> -->
+</body>
+</html>

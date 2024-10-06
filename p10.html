@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinational selectors</title>
+    <style>
+        .container{
+            padding: 20px;
+            margin: 20px;
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+            border:2px solid #000;
+
+        }
+        .container h1{/*descendant selectors*/
+            color:#fff;
+            background-color: burlywood;
+            padding: 10px;
+        }
+        .container p{
+            color:#fff;
+            background-color: darkcyan;
+            padding: 10px;
+        }
+        .container div{
+            padding: 20px;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CSS combinational SELECTORS</h1>
+    </center>
+
+    <ul>
+        <li>Descendant selector(using space)</li>
+        <li>child selector(using > symbol)</li>
+        <li>Adjacent sibiling selector(using + symbol)</li>
+        <li>General sibiling selector (using ~ symbol)</li>
+    </ul>
+
+    <h1>Descendant selector(using space)</h1>
+    <p>the style is applied for both child as well as grand child of the section</p>
+
+    <section class="container">
+        <h1>heading1(child element)</h1>
+        <p>this is the paragraph(child) </p>
+
+        <h1>heading2(child element)</h1>
+        <p>this is the paragraph(child) </p>
+
+        <h1>heading3(child element)</h1>
+        <p>this is the paragraph(child) </p>
+
+        <div>
+            <h1>heading1( grand child element)</h1>
+        <p>this is the paragraph(child) </p>
+        </div>
+
+        <h1>heading1(child element)</h1>
+        <p>this is the paragraph(child) </p>
+
+        <h1>heading2(child element)</h1>
+        <p>this is the paragraph(child) </p>
+
+        <h1>heading3(child element)</h1>
+        <p>this is the paragraph(child) </p>
+    </section>
+</body>
+</html>

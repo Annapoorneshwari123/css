@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[href]{
+            font-size: 2rem;
+            display: block;
+            margin-bottom:30px ;
+            padding: 20px;
+            text-decoration: none;
+            border: 2px solid #0c0c0c;
+        }
+        a[href="https://www.instagram.com"]{
+            background-color: cadetblue;
+            color: #0c0c0c;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+
+        }
+        a[href="https://www.google.com"]{
+            background-color: rgb(244, 224, 9);
+            color: #0c0c0c;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: 500;
+
+        }
+        a[target="_parent"]{
+            background-color:blanchedalmond ;
+            color:#fff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 400;
+
+        }
+        input[type]{
+            padding: 10px;
+            width: 400px;
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+            outline: none;
+            font-size: 1.2rem;
+        }
+        input[type="text"]{
+              border:2px solid #f333f3;
+              background-color: #f333f32e;
+        }
+    </style>
+</head>
+<body>
+    <h1>attribute with value selectors (attribute with values)</h1>
+
+    
+
+    <a href="https://www.google.com" download="" target="_blank">google</a>
+    <a href="https://www.instagram.com" download="" target="_parent">instagram</a>
+    <a href="https://www.twitter.com" download="" target="_self">twitter</a>
+
+    <input type="text" name="" id="" placeholder="enter your name">
+</body>
+</html>

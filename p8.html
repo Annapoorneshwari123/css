@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+        [src]{
+            background-color: #0c0c0c;
+            padding: 30px;
+            border-radius: 20px;
+            display: block;
+            margin: auto;
+        }
+        [alt]{
+            border: 3px solid #5b5b5b;
+
+        }
+        [title]{
+            background-color: #5b5b5b;
+            padding: 30px;
+        }
+        h2[title]{
+            background-color: aqua;
+
+        }
+        a[href]{
+            font-size: 2rem;
+            color: blue;
+            text-decoration: none;
+            font-weight: 900;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: block;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>css selectors</h1>
+        <p>we have some css selectors to style the html elements</p>
+    
+    <ul>
+        <li>universal selectors(*)</li>
+        <li>element selectors (tag name)</li>
+        <li>class name selectors (class name using .)</li>
+        <li>Id selectors (using id attributes #)</li>
+        <li>attribute selectors (using any attributes inside the elements)</li>
+        <li>attribute with value selectors (attribute with values)</li>
+    </ul>
+</center>
+
+<h1>attribute selectors (using any attributes inside the elements)-2types[global and local attributes]</h1>
+
+    <img src="https://th.bing.com/th/id/OIP.34okHXUqLgLxJXEXl-_ttwHaEJ?rs=1&pid=ImgDetMain" alt="" >
+
+    <h1 title="this is the heading tag">haeading tag</h1>
+
+    <h2 title="this is the heading tag">haeading tag</h2>
+
+    <a href="https://www.google.com" download="" target="_blank">google</a>
+    <a href="https://www.instagram.com" download="" target="_blank">instagram</a>
+    <a href="https://www.twitter.com" download="" target="_blank">twitter</a>
+    <a href="https://www.chatgpt.com" download="" target="_blank">chatgpt</a>
+
+    </body>
+    </html>
