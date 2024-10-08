@@ -9,6 +9,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .main{
         background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/74e6eba46f6653d893d1fbd2/SOUND.png);
@@ -18,15 +19,12 @@
         align-items: center;
         justify-content: center;
         gap: 70px;
+        
     }
     .left h1{
         font-size: 90px;
-        color: rgb(100, 100, 58);
-    }
-    .left h2{
-        font-size: 45px;
-        color: #fff;
-        text-decoration: underline solid #fff;
+        color: transparent;
+        -webkit-text-stroke:3px rgb(26, 2, 2);
         text-underline-offset: 20px;
     }
     .main-btn{
@@ -44,6 +42,116 @@
         align-items: center;
         justify-content: center;
         gap: 70px;
+        position: relative;
+       
+    }
+    .left1{
+        flex:1;
+    }
+    .right1{
+        flex:1;
+    }
+    .left1 img{
+        position: absolute;
+        top:0;
+        left:20%;
+    }
+    .left1 h3{
+        position: absolute;
+        top:70%;
+        left:15%;
+        font-size: 25px;
+        color: #fff;
+    }
+    .left1 ul {
+        position: absolute;
+        top:78%;
+        left:15%;
+        font-size: 20px;
+        color: #fff;
+    }
+    .heading1{
+        font-size: 45px;
+        font-weight: 800;
+        color: #fff;
+        margin: 10px 0px;
+    }
+    .subtitle{
+        font-size: 20px;
+        line-height: 1.5rem;
+        color: #fff;
+        
+    }
+    /* .features{
+        background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1…58ad8948c4bd/d9c82806b5d527acca78f733995275c3.jpg);
+        filter: saturation(100%);
+        width: 100%;
+        height: 600;
+    } */
+     .design{
+        background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/74e6eba46f6653d893d1fbd2/SOUND.png);
+        width: 100%;
+        height: 900px; 
+        text-align: center;
+     }
+     .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:40px;
+     }
+     .content .left2 .right2{
+         width: 500px;
+         height: 500px;
+        margin-left: 50px;
+        
+     }
+     .content .subtitle{
+        line-height: 2rem;
+
+     }
+     .content .left2{
+        text-align: justify;
+     }
+     .content .right2 p{
+        padding: 70px 0px;
+        text-align: justify;
+
+     }
+     .right2 .main-btn{
+       margin-top: 10px;
+     }
+
+    .quality{
+        width: 100%;
+        height: 600px;
+        background-image:url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/15c6b68467f25446b45a8b9d/Untitled12.png) ;
+    }
+    .sound{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .left3{
+        padding: 20px 70px;
+    }
+    .buying{
+        width: 100%;
+        height: 600px;
+        background-color: #c67258;
+    }
+    .buy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .right4 p{
+        padding-right: 50px;
+    }
+    .main-btn:hover{
+        background-color: black;
+        color: ;
     }
     
     </style>
@@ -58,13 +166,15 @@
                 <button class="main-btn">Read More</button>
         </div>
         <div class="right">
-            <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/27563ba211145f429a60e00a/50043183b.png" alt="">
+            <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/27563ba211145f429a60e00a/50043183b.png" alt="" >
         </div>
         
     </section>
+
+
     <section class="about">
         <div class="left1">
-            <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/e822c072bf9c5a03b1ab0b17/d04d30b574926ef80c9c57b881286d4c.png" alt="">
+            <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/e822c072bf9c5a03b1ab0b17/d04d30b574926ef80c9c57b881286d4c.png" alt="" height="580">
             <h3>Key Features</h3>
             <ul>
                 <li>Review Price: £299.99</li>
@@ -73,8 +183,59 @@
                 <li>Optional cable</li>
             </ul>
         </div>
-        <div class="right1"></div>
+        <div class="right1">
+            <h1 class="heading1">What are the <br>Sony MDR-1ABT?</h1>
+            <p class="subtitle">The Sony MDR-1ABT are wireless Bluetooth headphones that don’t <br> scrimp on sound quality or tech. They’re about as up to date as you <br>could hope for, offering features in line with the current Hi-Res Audio <br>trend.</p>
+            <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/964a5b2f31665334aa649eaa/23.jpg" alt="" height="400px" width="600px">
+        </div>
 
     </section>
+
+    <section class="design">
+        <h1 class="heading1">Sony MDR-1ABT – Design</h1>
+        <div class="content">
+            <div class="left2">
+            <p class="subtitle">The Sony MDR-1ABT look, no surprise, an <br>awful lot like the MDR-1A headphones we <br>reviewed earlier this year. Sony’s headphones have a <br>distinct style, and it’s a sound one that offers a hint of <br>urban flavour  while being a lot more neutral than a pair of <br>Beats headphones.</p>
+        </div>
+        <div class="right2">
+            <p class="subtitle">Of course, some may take issue with the <br> Sony MDR-1ABT’s familiarity. The MDR-1As <br>are £170 headphones, these are £300 ones,<br> without any obvious upgrade in build quality.</p>
+            <button class="main-btn">Read More</button>
+        </div></div>
+        <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/3c59adb463f7511e9618d752/obz.png" alt="" height="500" width="700">
+    </section>
+<!-- 
+    <section class="features">
+          <h1 class="heading1">Sony MDR-1ABT – Features</h1> 
+          <p class="subtitle">First, wireless is optional. There’s a 3.5mm socket for when you run out of battery or can’t be bothered to go wireless, and there’s a cable in the box. On the underside of one cup is a mic for handsfree calls and there’s just one button on the Sony MDR-1ABT, the power button.</p>   
+          <button class="main-btn">Read More</button>  
+    </section> -->
+
+    <section class="quality">
+        <div class="sound">
+            <div class="left3">  
+                <h1 class="heading1">Sony MDR-1ABT – <br> Sound Quality</h1>
+                <p class="subtitle">The Sony MDR-1ABT use a kind of digital processing called DSEE HX that claims <br>to upscale non Hi-Res audio to a quality comparable to the good stuff.It sounds to us <br>like this happens as part of the DAC chain: the part that converts the digital wireless <br> signal into the analogue one that eventually drives the 40mm dynamic drivers used here. Plus it’s what makes sense from a technical perspective.</p>
+                <button class="main-btn">Read More</button></div>
+
+
+            <div class="right3">
+                <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/498786d91485566ca61406e0/2.jpg" alt="" width="650" height="600">
+            </div>
+    </section>
+
+    <section class="buying">
+        <div class="buy">
+            <div class="left4">  
+                <img src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/5cf3f8e821c55ecf941808b3/24.jpg" alt="" width="650" height="600"></div>
+
+
+            <div class="right4">
+                <h1 class="heading1">Should I buy the Sony <br>MDR-1ABT?</h1>
+                <p class="subtitle">As with any wireless or noise cancelling set of headphones, before buying the Sony MDR-1ABT, you need to make sure you need their spotlight feature. Because (stating the obvious) you do pay for it. <br> <br> <br>What we have here are solid just-sub-£200 headphones whose wireless antics elevate them into the real big leagues, price-wise. And while we imagine 99 per cent of people will like the Sony MDR-1ABT sound, better-built and better-sounding non-wireless headphones are available for less. It’s down to that awkward truth: where a cheaper set might add on £30-40 for wireless, this one gains £130.
+                </p>
+                <button class="main-btn">Read More</button>
+            </div>
+
+</div>
 </body>
 </html>
