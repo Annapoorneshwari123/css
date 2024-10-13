@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(184, 183, 183);
+            padding: 20px;
+            margin: 20px;
+        }
+        .b1{
+            /* overflow: hidden;
+            overflow: scroll; */
+            overflow: auto;
+        }
+        .b2 p{
+            white-space: nowrap;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>handling text-overflow using css properties</h1>
+    </center>
+    <hr>
+
+    <div class="b1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident dignissimos odit quo, ut qui sed eum blanditiis omnis maxime necessitatibus commodi facilis temporibus excepturi doloribus ipsam dolores architecto soluta modi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus, odio soluta officia suscipit molestiae laborum cum, commodi adipisci distinctio, doloribus maiores sint. Quasi provident, odio commodi facere eaque fugit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime soluta ratione quae commodi, accusantium, eos facere enim aliquam quam vero aperiam harum ea iusto doloremque possimus qui reiciendis mollitia tempora.</p>
+    </div>
+
+    <h1>text-ellipsis(...)</h1>
+    <div class="b2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident dignissimos odit quo, ut qui sed eum blanditiis omnis maxime necessitatibus commodi facilis temporibus excepturi doloribus ipsam dolores architecto soluta modi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus, odio soluta officia suscipit molestiae laborum cum, commodi adipisci distinctio, doloribus maiores sint. Quasi provident, odio commodi facere eaque fugit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime soluta ratione quae commodi, accusantium, eos facere enim aliquam quam vero aperiam harum ea iusto doloremque possimus qui reiciendis mollitia tempora.</p>
+    </div>
+</body>
+</html>

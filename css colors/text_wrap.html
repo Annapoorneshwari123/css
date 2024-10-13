@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text</title>
+    <style>
+        section{
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #000;
+        }
+        section div{
+            padding: 30px;
+            border: 4px solid #ccc;
+            width: 300px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section div p{
+            text-align: center;
+        }
+        .b1{
+            text-wrap:wrap;
+        }
+        .b2{
+            text-wrap: nowrap;
+        }
+        .b3{
+            text-wrap:balance;
+        }
+        .b4{
+            text-wrap:pretty;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>text-wrap</h1>
+    </center>
+
+    <section>
+        <h2>wrap</h2>
+        <div class="b1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim et, impedit eos nemo nihil molestias atque dolores natus, praesentium deserunt unde magni amet quae blanditiis doloremque ex, eaque necessitatibus illum!</p>
+        </div>
+
+        <hr>
+
+        <h2>nowrap</h2>
+        <div class="b2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim et, impedit eos nemo nihil molestias atque dolores natus, praesentium deserunt unde magni amet quae blanditiis doloremque ex, eaque necessitatibus illum!</p>
+        </div>
+
+        <hr>
+
+        <h2>balance</h2>
+        <div class="b3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim et, impedit eos nemo nihil molestias atque dolores natus, praesentium deserunt unde magni amet quae blanditiis doloremque ex, eaque necessitatibus illum!</p>
+        </div>
+
+        <hr>
+
+        <h2>pretty</h2>
+        <div class="b4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim et, impedit eos nemo nihil molestias atque dolores natus, praesentium deserunt unde magni amet quae blanditiis doloremque ex, eaque necessitatibus illum!</p>
+        </div>
+
+        <hr>
+
+    </section>
+</body>
+</html>
