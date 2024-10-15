@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-container{
+    min-height: 100vh;
+    background-color: #eeecec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+
+}
+.left{
+    background-color: #eeecec;
+    flex:1;
+    height: 200px;
+    margin-left: 200px;
+    padding: 20px;
+}
+.left h1{
+font-size: 50px;
+color: rgb(24, 87, 194);
+font-weight: 700;
+margin-bottom: 10px;
+}
+.left p{
+    font-size: 1.5rem;
+}
+.right{
+    flex:1;
+    
+}
+.card{
+    width:400px;
+    height: 390px;
+    background-color: #fff;
+    margin-right: 300px;
+    border-radius: 10px;
+    text-align: center;
+   
+   
+}
+.card .group{
+padding: 20px;
+
+}
+.group input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border:1px solid #999898;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.group input:focus{
+    border:1px solid blue;
+    box-shadow: 1px 0px 5px blue;
+}
+.card button{
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background-color: rgb(31, 95, 200);
+    color: #fff;
+    transition: 0.8s;
+    cursor: pointer;
+}
+.card #account a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.divider{
+    width:98%;
+    height: 2px;
+    background-color: #cbc7c7;
+    margin-left: 5px;
+    margin-top: 20px;
+    
+}
+.container{
+    min-height: 100vh;
+    background-color: #eeecec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    width: 400px;
+    min-height: 450px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.cards h1,.cards p{
+    text-align: center;
+}
+#account{
+    padding: 15px 0px ;
+    width:50%;
+    background-color: #09c431;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.parts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    
+}
+.parts label{
+    border:1px solid #ccc;
+    padding: 6px 20px;
+    border-radius: 5px;
+}
+.group input{
+    margin-top: 15px;
+}
+.cards a{
+color:blue;
+}
+.cards button{
+    color: #fff;
+
+}
+.cards #account a{
+    padding: 10px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-decoration: none;
+
+}
+.cards button ,a{
+    margin-top: 20px;
+    margin-left: 80px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    
+}
+.cards a{
+    text-decoration: none;
+}
+.cards #account:hover{
+    color:#a39e9e;
+}

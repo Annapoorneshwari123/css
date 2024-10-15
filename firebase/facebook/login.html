@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facelogin</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+   <section class="main-container">
+    <div class="left">
+        <h1>facebook</h1>
+        <p>Facebook helps you connect and share <br> with the people in your life.</p>
+    </div>
+    <div class="right">
+        <div class="card">
+            <div class="group">
+                <label for="email"></label>
+            <input type="text" placeholder="Email address or Phone number" name="email" id="email">
+            </div>
+            <div class="group">
+                <label for="password"></label>
+            <input type="password" placeholder="Password" name="password" id="password">
+            </div>
+            <button type="button" onclick="loginHandler()">Sign in</button>
+                <a href="#">Forgotten password?</a>
+                <button type="button" id="account"><a href="./create.html">Create account</a></button>
+        </div>
+        
+    </div>
+   </section> 
+   <!-- using firebase in our app -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+   <script>
+        const email=document.getElementById('email');
+        const password=document.getElementById('password');
+        const btn=document.getElementById('btn');
+
+
+    const firebaseConfig = {
+    apiKey: "AIzaSyC3YL2IG_PXIQcxkRrtqMFYJpBsEc42nz4",
+    authDomain: "bookauthentication-89a3f.firebaseapp.com",
+    projectId: "bookauthentication-89a3f",
+    storageBucket: "bookauthentication-89a3f.appspot.com",
+    messagingSenderId: "73975987325",
+    appId: "1:73975987325:web:93250cb8d437d572b48514",
+    measurementId: "G-EZGJC8V3TM"
+    };
+
+    const app = firebase.initializeApp(firebaseConfig);//initializing firebase credentials in our website
+         const AuthenticationRoom =firebase.auth();//using firebase feature
+
+        
+         function loginHandler(){
+            //   alert(email.value)
+            //   alert(password.value)
+            AuthenticationRoom.signInWithEmailAndPassword(email.value,password.value)
+            .then(function(){
+               
+                //if login is sucess this function will run
+                alert('Login in successfull')
+                window.location.href = './home.html'
+            })
+            .catch(function(error){
+                alert('please try again later...')
+                console.log(error.message);
+            })
+         }
+   </script>
+</body>
+</html>
