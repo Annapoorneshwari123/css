@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+   min-height: 100vh;
+   background-color: cadetblue;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.card{
+background-color: #fff;
+width: 330px;
+padding: 20px;
+border-radius: 10px;
+}
+.group input{
+width: 100%;
+margin-bottom: 10px;
+padding: 10px;
+border: none;
+outline: none;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+.card a{
+color: cadetblue;
+
+}
+.card button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: cadetblue;
+    color: #fff;
+    transition: 0.8s;
+    cursor: pointer;
+}
+.card button:hover{
+    background-color: rgb(14, 204, 211);
+}
